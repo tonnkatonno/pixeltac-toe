@@ -1,28 +1,22 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>PixelTacToe</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="Scripts/PixelTacToe.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Tic‑Tac‑Toe</title>
     <style>
-        /* Don't show the not-yet-loaded templates */
-        [ws-template], [ws-children-template] { display: none; }
+        body            { font-family: system-ui, sans-serif; margin:0; padding:0; }
+        #game-container { width: max-content; margin:50px auto; text-align:center; }
+
+        .game-board     { display:grid; grid-template-columns:repeat(3,100px); gap:6px; margin:auto; }
+        .cell           { width:100px; height:100px; background:#fff; border:2px solid #333; cursor:pointer; }
+        .cell:hover     { background:#f0f0f0; }
+        .cell img       { width:100%; height:100%; object-fit:contain; border-radius:6px; }
+        .status         { margin-top:20px; font-size:20px; }
     </style>
-    <script type="text/javascript" src="Scripts/PixelTacToe.head.js"></script>
 </head>
 <body>
-    <h1>My list of unique people</h1>
-    <div id="main" ws-children-template="Main">
-        <ul ws-hole="ListContainer">
-            <li ws-template="ListItem">${Name}</li>
-        </ul>
-        <div>
-            <input ws-var="Name" placeholder="Name" />
-            <button ws-onclick="Add">Add</button>
-            <div>You are about to add: ${Name}</div>
-        </div>
-    </div>
-    <script type="module" src="Scripts/PixelTacToe.min.js"></script>
+<div id="main"></div>
+<script type="module" src="/scripts/PixelTacToe.js"></script>
 </body>
 </html>
