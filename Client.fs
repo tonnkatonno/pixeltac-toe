@@ -272,7 +272,7 @@ module Client =
 
     let scoreboard =
         div [ attr.style "margin-left:20px;" ] [
-            h3 [] [ text "Eredmények" ]
+            h3 [] [ text "Results" ]
             p [] [
                 textView (
                     View.Map2 (fun name w -> sprintf "%s: %d" name w)
