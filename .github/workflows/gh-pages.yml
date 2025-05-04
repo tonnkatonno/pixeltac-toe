@@ -22,7 +22,6 @@ jobs:
         with:
           node-version: '18'
 
-      - run: npm ci
       - run: |
           dotnet publish -c Release -o publish
           
