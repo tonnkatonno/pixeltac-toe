@@ -5,12 +5,12 @@ on:
     branches: [ master ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
-    environment:
-      name: github-pages
 
     steps:
       - uses: actions/checkout@v3
