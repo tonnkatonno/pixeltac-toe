@@ -54,3 +54,6 @@ dotnet build
 # 2. run the dev server
 dotnet run
 # → open http://localhost:5000
+
+![image](https://github.com/user-attachments/assets/a1e005aa-db5e-465e-bc15-e67a77602375)
+
