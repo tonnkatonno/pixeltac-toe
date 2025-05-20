@@ -40,6 +40,7 @@ It currently runs entirely in the browser, but a lightweight F# server is on the
 - **GitHubPages** for static hosting (until the server side ships)  
 
 ---
+![image](sc.png)
 
 ## 📦RunningLocally
 
@@ -55,5 +56,5 @@ dotnet build
 dotnet run
 # → open http://localhost:5000
 
-![image](sc.png)
+
 
